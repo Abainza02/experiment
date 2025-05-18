@@ -1,0 +1,43 @@
+/* frontend/src/components/SectionHeader.css */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-md);
+  padding: 0 var(--space-md);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: var(--dark-brown);
+  margin: 0;
+}
+
+.section-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--sage-green);
+  font-weight: 500;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.section-link:hover {
+  color: var(--dark-brown);
+  transform: translateX(3px);
+}
+
+.link-arrow {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.3rem;
+  }
+  
+  .section-link {
+    font-size: 0.9rem;
+  }
+}

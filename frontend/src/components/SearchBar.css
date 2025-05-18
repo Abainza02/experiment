@@ -1,0 +1,34 @@
+/* Compact Search Bar */
+.search-form {
+  display: flex;
+  align-items: center;
+  background-color: var(--light-cream);
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid var(--light-cream);
+}
+
+.search-input {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  background: transparent;
+  width: 160px;
+}
+
+.search-button {
+  padding: 0.4rem 0.8rem;
+  background-color: var(--sage-green);
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition-fast);
+}
+
+.search-button:hover {
+  background-color: var(--dark-sage-green); /* optional darker tone */
+}

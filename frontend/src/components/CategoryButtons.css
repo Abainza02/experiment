@@ -1,0 +1,69 @@
+/* frontend/src/components/CategoryButtons.css */
+.category-buttons-container {
+  background-color: var(--light-cream);
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid var(--warm-beige);
+}
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.category-button {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: 50px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-family: var(--font-heading);
+  box-shadow: var(--shadow-sm);
+}
+
+.category-button:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.category-icon {
+  font-size: 1.2rem;
+}
+
+.category-button.appetizer {
+  background-color: var(--sage-green);
+  color: var(--light-cream);
+}
+
+.category-button.meal {
+  background-color: var(--dark-brown);
+  color: var(--light-cream);
+}
+
+.category-button.beverages {
+  background-color: var(--soft-green);
+  color: var(--dark-brown);
+}
+
+.category-button.desserts {
+  background-color: var(--warm-beige);
+  color: var(--dark-brown);
+}
+
+@media (max-width: 768px) {
+  .category-buttons {
+    gap: var(--space-sm);
+  }
+  
+  .category-button {
+    padding: var(--space-xs) var(--space-md);
+    font-size: 0.9rem;
+  }
+}
